@@ -8,10 +8,10 @@ class circle:
     def calculate_surface(self):
         return self.radius*2 *math.pi
 
-day_1 = circle(80)
+day_1 = circle()
 
-print(f'masahat barabar ast ba:{day_1.calculate_area()}')
-print(f'mohit barabar ast ba:{day_1.calculate_surface()}')
+print(f'The area of circle is equal to:{day_1.calculate_area()}')
+print(f'The surface of circle is equal to:{day_1.calculate_surface()}')
 
 
 
