@@ -2,6 +2,7 @@
 import random
 
 print('''
+=================
 Password Generator
 ==================
 ''')
