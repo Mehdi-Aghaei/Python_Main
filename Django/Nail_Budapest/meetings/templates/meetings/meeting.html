@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments-list</title>
+</head>
+
+<body class="m-3">
+    {% extends "meetings/base.html" %}
+    {% block content %}
+
+    <H2>Meeetings list</H2>
+    
+    <ul>
+        {% for meeting in meetings %}
+        <li>
+            <a href="{% url 'detail' meeting.id %}">{{meeting.name}}</a>
+            <p>{{meeting.service}}, {{meeting.appointment_date}}, {{meeting.appointment_time}}</p>
+
+
+
+
+
+        </li>
+        {% endfor %}
+
+    </ul>
+
+    {% endblock content %}
+
+</body>
+
+</html>
