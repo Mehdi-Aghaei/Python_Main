@@ -1,8 +1,9 @@
+# O(nlog(n) + mlog(m)) time | space O(1) m&n len(arr)
 def smallestDifference(arrayOne, arrayTwo):
 	A = sorted(arrayOne)
 	B = sorted(arrayTwo)
-	smallest=float("inf")
-	current=float("inf")
+	smallest=float("inf")#smallest difference
+	current=float("inf")#current difference
 	i = 0
 	j = 0
 	result = []
