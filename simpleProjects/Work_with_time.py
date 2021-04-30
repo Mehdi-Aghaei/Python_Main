@@ -7,7 +7,6 @@ class Battery:
         
     def check_date():
         x = datetime.now()
-        
         with open("/tmp/battery_check.txt", mode='a') as file:
             file.write(f"\n record is {x}")
             return file
